@@ -1,0 +1,177 @@
+body {
+    background: #DAA520;
+    color:#CD853F;
+    padding: 4em;
+    font-family: sans-serif;
+    line-height: 1.15;
+  }
+
+.page {
+    padding: 2em;
+    background: #F0E68C;
+    max-width: 1100px;
+  }
+
+nav{
+    padding-bottom: 5%;
+   
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B4513;
+  max-width: 1160px;
+  height: 34px;
+  
+}
+
+li{
+  text-align: center;
+  display: inline;
+  
+}
+
+@media screen and (max-width: 600px) {
+  ul li.right, 
+  ul li {float: none;}
+  .picture{
+    column-count: 3;
+}
+}
+
+li a, .dropbtn{
+  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:last-child {
+  float:right;
+}
+#active {
+    background-color:#FFA500;
+  }
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #CD853F;
+    height: inherit;
+  }
+
+li.dropdown {
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.color:hover
+{
+        color:#8B4513;
+        
+}
+h1{ max-width: 130%;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-name: titlu;
+}
+@keyframes titlu {
+    from {background-color:#F0E68C;}
+    to {background-color: #DAA520;}
+  }
+
+.picture{
+    column-count: 4;
+    column-gap: 0.5em;
+}
+
+figcaption {
+    display: table-row;
+    caption-side: top;
+  }
+figure{
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+figure img {
+        
+    width: 100% ;
+    height: auto;
+    
+  }
+
+span{ font-size:1em;
+font-style:italic;}
+
+a:link {
+    text-decoration: none;
+    
+  }
+  footer a:link{color:#800000;}
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer a:visited{color: #FFFACD;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .picture {
+      column-count: 4;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .picture {
+      column-count: 3;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 540px) {
+    .picture {
+      column-count: 2;
+    }
+  }
+  footer{
+    margin-top: 100px;
+  }
+  
+  hr {
+    height: 6px;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+  } 
+
+.picture h2{
+    display: none;
+  }
+
+

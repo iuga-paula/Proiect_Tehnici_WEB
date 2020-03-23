@@ -1,0 +1,179 @@
+<!DOCTYPE html> <!-- obligatoriu HTML5 -->
+<html lang="en">
+
+<head> 
+<link rel="stylesheet" href=" Review_style.css">
+<title>
+Casa Batllo-Review
+</title>
+
+<link rel="icon"   href="casa-batllo-gaudi-barcelona.jpg">
+	  
+<meta charset="UTF-8">
+<meta name="author" content="IUGA Paula">
+<meta name="description" content="Casa Batllo Presentation Web site">
+<!---<meta http-equiv="Last-Modified" content="MON, 03 March 2020 00:58:08 GMT"> -->
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+
+<base href="Casa_Batllo" target="_parent">
+ </head>
+
+<!--<body bgcolor="#FFFCC"> -->
+<body>
+<nav>
+  <ul class="menu">
+    <li class="dropdown">
+      <a href="Casa_Batllo.html" class="dropbtn">Home</a>
+      <div class="dropdown-content">
+        <a href="Casa_Batllo.html">Main Home Page</a>
+        <a href="Casa_Batllo.html#info">Info</a>
+        <a href="Casa_Batllo.html#tickets">Tickets</a>
+        <a href="Casa_Batllo.html#location">Location</a>
+        <a href="Casa_Batllo.html#video">Video</a>
+      </div>
+    </li>  
+    <li><a href="Photo_gallery.html" target="_parent">Photo Gallery</a></li>
+    <li class="dropdown">
+      <a href="Events.html" class="dropbtn">Events</a>
+      <div class="dropdown-content">
+        <a href="Events.html">Main Events Page</a>
+        <a href="Events.html#best">Best event</a>
+         <a href="Events.html#contact">Contact</a>
+      </div>
+    </li> 
+    <li class="dropdown">
+      <a href="Review.html" target="_parent" id="active" class="dropbtn">Give us a review</a>
+      <div class="dropdown-content">
+        <a href="Review.html#f1">Complete the form</a>
+        <a href="Review.html#comment">Comments section</a>
+      </div>
+    </li>
+   </ul>
+</nav>
+
+<h1>Have you ever <span>visited </span> Casa Batllo <span>before?</span></h1>
+
+<div id="Q">
+    
+    <p id='5'><img src="question-circle-regular.svg" alt="question-circle-regular">Then it's the right time to share your opinion with us:</p>
+    <ul style="list-style-type:circle">
+    <li> </li>
+    
+    </ul>
+  </div>
+    
+
+
+<aside>
+    Make a visit to remember:<br> Buy a ticket in advance <br>
+    <a href="https://www.casabatllo.es/en/online-tickets/">SEE AVAILABLE TICKETS </a>
+  </aside>
+
+
+  
+
+  <form method="post" action="mailto:iuga.paula@gmail.com" id="f1">
+
+    <div>How was your day at Casa Batllo?</div>
+    <label class="container">Amazing 
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Satisfying
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+
+    <label class="container">OK
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Horryble
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    
+
+    <div>What did you liked the most?</div>
+    <label class="container3">The rooftop
+      <input type="checkbox" checked="checked">
+      <span class="checkmark3"></span>
+    </label>
+
+    <label class="container3">The inside fontain
+      <input type="checkbox">
+      <span class="checkmark3"></span>
+    </label>
+
+    <label class="container3">The stairway
+      <input type="checkbox">
+      <span class="checkmark3"></span>
+    </label>
+
+    <label class="container3">The furniture exposition
+      <input type="checkbox">
+      <span class="checkmark3"></span>
+    </label>
+
+
+
+    <div>Would you visit again Casa Batllo?</div>
+    <label class="container2">No, one time was enough
+      <input type="radio" checked="checked" name="radio2">
+      <span class="checkmark2"></span>
+    </label>
+    <label class="container2">Maybe
+      <input type="radio"  name="radio2">
+      <span class="checkmark2"></span>
+    </label>
+    <label class="container2">Definitely
+      <input type="radio"  name="radio2">
+      <span class="checkmark2"></span>
+    </label>
+    
+    <label class="container2">Yes if I get the chance to visit Barcelona again
+      <input type="radio"  name="radio2">
+      <span class="checkmark2"></span>
+    </label>
+    
+
+
+    <input type="submit" name="Sent" value="Sent">
+    <input type="reset" name="reset_btn" value="Delete all" class="banner alertPulse-css"><br>
+
+  </form>
+ 
+
+  <form method="post" action="mailto:iuga.paula@gmail.com" id = "comment">
+    <div>Would you like to leave a comment?</div>
+    <label for="fname">First name:</label><br>
+    
+    <input type="text" id="fname" name="fname" placeholder="Write your first name here "><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Write your last name here"><br>
+    <textarea name="multilinetext" cols="60" rows="5" >
+        Delete this line and leave your comment here
+    </textarea>
+    <input type="submit" name="Sent" value="Sent">
+ </form>
+
+  <div id="box">
+    <img src="tour_img-1533961-148.jpg" alt="picture">
+  </div>
+
+<footer id="contact">
+  <hr>
+    <p>Posted by: IUGA Paula</p>
+    <p>Contact information: <a href="mailto:iuga.paula@gmail.com">
+    iuga.paula@gmail.com</a></p>
+    <p>Phone number:<a href="tel:0772298208">0772298208</a></p>
+    <p>Visit us at:<br>
+Museums.com<br>
+Box 564, Rambla, Barcelona</p>
+</footer>
+ </body>
+ </html>
+ 
+ 
