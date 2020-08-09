@@ -1,0 +1,500 @@
+nav{
+    padding-bottom: 2%;
+    grid-column: 1 / span 2;
+   
+
+}
+
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B4513;
+  max-width: 1160px;
+  height: 34px;
+  
+}
+
+nav li{
+  text-align: center;
+  display: inline;
+  
+}
+
+@media screen and (max-width: 600px) {
+  ul li.right, 
+  ul li {float: none;}
+}
+
+li a, .dropbtn{
+  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:last-child {
+  float:right;
+}
+#active {
+    background-color:#FFA500;
+  }
+li a:hover:not(.active), .dropdown:hover .dropbtn {
+    background-color: #CD853F;
+    height: inherit;
+  }
+
+li.dropdown {
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:link {
+    text-decoration: none;
+    
+  }
+  footer a:link{color:#800000;}
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer a:visited{color: #FFFACD;
+  }
+
+  h1{
+    color: #8B4513;
+    grid-column: 1 / span 2;
+  }
+
+ h1 > span{
+    font-size: 1.5em;
+  }
+
+  h1::first-letter{font-size: 1.2em;}
+
+  .recl{
+    color: #8B4513;
+    font-size: 1.5em;}
+
+form:first-of-type{
+  background-color: #F0E68C;
+  /*margin-block-end: 30px;*/
+  width: 50%;
+  resize: vertical;
+  overflow: auto;
+  grid-column: 1 / span 2;
+  margin-bottom: -60px;
+}
+  
+
+form:last-of-type{
+  float: right;
+  
+  resize: vertical;
+  overflow: auto;
+  background-color: #F0E68C;
+  margin-bottom: 60px;
+  grid-column: 1 / span 2;
+  grid-area: 5 / 2 / 5 / 2;
+  opacity: 0.7;
+  margin-left:-70px;
+  
+
+}
+
+form div{
+  margin: 50px 50px 30px 50px;
+  font-size: 20px;}
+
+form div::first-letter{
+  font-size: 1.5em;
+}
+
+form:last-of-type label,input[type^="text"],textarea{
+  margin-left: 10px;
+}
+
+#undecided, #save, input[value^="Send"] {
+    background-color: #fff;
+    border: none;
+    color:#CD853F;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 10px 10px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+    
+}
+
+#altcaptcha{
+  background-color: #fff;
+    border: none;
+    color:#CD853F;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 10px 10px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+    
+
+}
+
+#altcaptcha:hover, #undecided:hover, #save:hover, input[value^="Send"]:hover{
+  background-color: #9A2727;
+  color: #fff;
+  
+}
+
+
+input[type^="text"], textarea{
+  opacity: 0.3;
+  background-color:#D2B48C;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+
+.container, .container2 {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* for radio buttons*/
+/* Hide the browser's default radio button */
+.container input, .container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark, .checkmark2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark, .container2:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add background */
+.container input:checked ~ .checkmark, .container2 input:checked ~ .checkmark2{
+  background-color: #8B4513;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after,.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after, .container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after, .container2 .checkmark2:after {
+ 	top: 5px;
+	left: 5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* for checkboxes*/
+.container3 {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container3:hover input ~ .checkmark3 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container3 input:checked ~ .checkmark3 {
+  background-color: #8B4513;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container3 input:checked ~ .checkmark3:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container3 .checkmark3:after {
+  left: 5px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+::placeholder{color:#8B4513;}
+
+:-ms-input-placeholder { 
+  color: #8B4513;
+}
+
+
+::-ms-input-placeholder { 
+  color: #8B4513;
+}
+.alertPulse-css {
+  animation-name: alertPulse;
+  animation-timing-function:  ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
+  background-color: #9A2727; 
+}
+
+.banner {
+font-family: system-ui;
+margin: 1rem;
+border-radius: 100px;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+@keyframes alertPulse {
+  from {background-color: #9A2727;}
+  to {background-color: red;}
+}
+#box img{
+ width:100%;
+ height: 500px;
+ padding-bottom: 0px;
+ position: inherit;
+ grid-column: 1 / span 2;
+
+}
+
+#box{
+  
+  
+  
+  box-shadow: 10px 5px rgba(153, 149, 149, 0.5);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color:  rgba(153, 149, 149, 0.5);
+  grid-column: 1 / span 2;
+  
+}
+
+footer{
+  margin-top: 100px;
+  grid-column: 1 / span 2;
+
+}
+
+hr {
+  height: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+} 
+
+aside{
+  font-size: 20px;
+  border: 3px solid gray;
+  padding: 15px;
+  background-color: #fff;
+  width: 25%;
+  height: 25vh;
+  position: -webkit-sticky;
+  position:sticky;
+  top:0;
+  z-index:1000;
+ 
+}
+
+ aside a:link {font-size: 1.5em;
+}
+
+.a a:link{color:#800000;}
+
+.a, aside a:hover {
+  text-decoration: underline;
+}
+
+.a, aside a:visited {color:#8B4513 ;
+}
+
+div ul, div p {color:hsl(0, 39%, 39%);}
+
+div p img{
+  height:20px;
+   width:20px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+body{
+  background: #DAA520;
+  color:#CD853F;
+  padding: 4em;
+  font-family: sans-serif;
+  line-height: 1.15;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill((2, 1fr)));*/
+  grid-template-columns: repeat(2,1fr);
+  align-content: center;
+  grid-template-rows:60px auto auto auto auto auto  60px;
+  grid-gap: 10px;
+}
+
+#Q li::before{
+  
+  content: 'How was your Gaudi journey?';
+  font-size:90%;
+  animation: intr 10s infinite;
+}
+
+@keyframes intr{
+
+  0%{
+    font-size: 110%;
+    opacity: 1;
+  }
+
+  35%{
+    font-size: 90%;
+    opacity: 0;
+  }
+
+  /*45%{font-size:600%;
+  opacity:1;}
+
+  55%{
+    font-size:560%;
+    opacity: 0;
+  }*/
+
+  55%{
+    font-size:110%;
+    opacity: 1;
+    content:'What did you like the most?';
+  }
+
+  85%{font-size:90%;
+      opacity: 0;
+  }
+
+  100%{
+    font-size: 110%;
+    opacity: 1;
+    content: 'What would you like to be improved?';
+  }
+
+ 
+}
+
+#Q1{
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
