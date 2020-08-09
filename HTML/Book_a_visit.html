@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- obligatoriu HTML5 -->
+<html lang="en">
+
+<head> 
+<link rel="stylesheet" href=" Book_a_visit_style.css">
+<title>
+Casa Batllo-Book a visit
+</title>
+
+<link rel="icon"   href="casa-batllo-gaudi-barcelona.jpg">
+	  
+<meta charset="UTF-8">
+<meta name="author" content="IUGA Paula">
+<meta name="description" content="Casa Batllo Presentation Web site">
+<!---<meta http-equiv="Last-Modified" content="MON, 03 March 2020 00:58:08 GMT"> -->
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+
+<base href="Casa_Batllo" target="_parent">
+ </head>
+
+<!--<body bgcolor="#FFFCC"> -->
+<body>
+<nav>
+  <ul class="menu">
+    <li class="dropdown">
+      <a href="Casa_Batllo.html" class="dropbtn">Home</a>
+      <div class="dropdown-content">
+        <a href="Casa_Batllo.html">Main Home Page</a>
+        <a href="Casa_Batllo.html#info">Info</a>
+        <a href="Casa_Batllo.html#tickets">Tickets</a>
+        <a href="Casa_Batllo.html#location">Location</a>
+        <a href="Casa_Batllo.html#video">Video</a>
+      </div>
+    </li>  
+    <li><a href="Photo_gallery.html" target="_parent">Photo Gallery</a></li>
+    <li class="dropdown">
+      <a href="Events.html" class="dropbtn">Events</a>
+      <div class="dropdown-content">
+        <a href="Events.html">Main Events Page</a>
+        <a href="Events.html#best">Best event</a>
+         <a href="Events.html#contact">Contact</a>
+      </div>
+    </li> 
+    <li><a href="Book_a_visit.html" target="_parent" id = "active">Book a visit</a></li>
+    <li class="dropdown">
+      <a href="Review.html" target="_parent"  class="dropbtn">Give us a review</a>
+      <div class="dropdown-content">
+        <a href="Review.html#f1">Complete the form</a>
+        <a href="Review.html#comment">Comments section</a>
+      </div>
+    </li>
+   </ul>
+</nav>
+<div class="page">
+<h1 id = "c">Do you want to book a visit at Casa Batllo? </h1>
+<h2 id="text">Hurry up!</h2>
+<h3 id="mess">(message number 0)</h3>
+<form id="f3">
+<div>
+    <label>
+        Your first name:
+        <input type="text" id="fname">
+    </label>
+</div>
+<div>
+    <label >
+        Your last name:
+        <input type="text" id="lname">
+    </label>
+</div>
+<div>
+    <label>
+      Choose a date:
+      <input placeholder="DD/MM/YYYY" type="text" id="the-date">
+    </label>
+  </div>
+  <div>
+    <label>
+      Choose the time:
+      <input placeholder="HH:MM" type="text" id="the-time">
+    </label>
+  </div>
+<button id="Save" type="submit"> Book</button>
+<button id="Info">See tours info</button>
+<div id="pscr">(text adaugat din xml)</div>
+</form>
+
+<div id="divCalendar">
+			
+</div>
+
+<button id="btnPrev" type="button">Previous</button>
+<button id="btnNext" type="button">Next</button>
+</div>
+
+<footer id="contact">
+    <hr>
+      <p>Posted by: IUGA Paula</p>
+      <p>Contact information: <a href="mailto:iuga.paula@gmail.com">
+      iuga.paula@gmail.com</a></p>
+      <p>Phone number:<a class="a" href="tel:0772298208">0772298208</a></p>
+      <p>Visit us at:<br>
+  Museums.com<br>
+  Box 564, Rambla, Barcelona</p>
+  </footer>
+  
+  <script src="Book_a_visit_javascript.js"></script>
+  <noscript>Attention! Your browser does not support JavaScript!</noscript> <!-- ca se se creeze arborele si sa pot accesa elem o pun in body-->
+</body>
+</html>
