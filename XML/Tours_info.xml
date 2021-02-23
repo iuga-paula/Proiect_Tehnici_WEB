@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<INFO>
+
+<tour val = "Short Visit/2h5/audio and video guide/Main hall,rooms,rooftop/20euro per pers">
+<name>SHORT VISIT</name>
+<duration>2h5</duration>
+<guide>audio and video guide</guide>
+<places>Main hall, rooms, rooftop</places>
+<price>20euro/pers</price>
+</tour>
+
+<tour val = "VISIT-ALL/ 4h/ audio and video guide/ Main hall, rooms, rooftop, RESTAUATION, terace/ 30euro per pers"><name>VISIT-All</name>
+<duration>4h</duration>
+<guide>audio and video guide</guide>
+<places>Main hall, rooms, rooftop,RESTAUATION, terace</places>
+<price>30euro/pers</price>
+</tour>
+
+<tour val = "One day/12h/personal guide and video guide/ Main hall, rooms, rooftop, RESTAUATION, terace, live concert at night/ 50euro per pers">
+<name>One day</name>
+<duration>12h</duration>
+<guide>personal guide and video guide</guide>
+<places>Main hall, rooms, rooftop, RESTAUATION, terace, live concert at night</places>
+<price>50uro/pers</price>
+</tour>
+
+</INFO>
