@@ -6,7 +6,7 @@ Proiect individual pentru tehnici web: Un site adresat turistilor care pot sa va
 Proiectul a fost creat in Visual Studio Code folosind:
 * HTML
 * CSS
-* JAVASCRIPT
+* JavaScript
 * NODE.js
 * XML
 * JSON
